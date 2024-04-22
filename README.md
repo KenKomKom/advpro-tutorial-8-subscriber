@@ -14,3 +14,6 @@ b. guest:guest merupakan username dan juga password yang digunakan untuk agar te
 
 ![alt text](image-3.png)
 Pada gambar diatas dapat dilihat kalau pada suatu saat sempat terdapat 15 message pada queue. Ini terjadi akibat subscribernya perlu waktu lebih lama untuk mengelola tiap event yang berada di message queue sehingga terjadi penumpukkan message karena lebih cepat publisher meng-publish message daripada subscriber membuat message.
+
+![alt text](image-4.png)
+Pada image tersebut dapat dilihat kalau pada tiap subscriber mendapatkan data yang berbeda-beda saat publisher mengirimkan banyak data ke message queue. Ini karena tiap subscriber berfungsi seperti aplikasi nya masing-masing sehingga terpisah saat mengambil data dari message queue. Ketika data sudah terambil dari message queue, maka message akan hilang dan aplikasi lain tidak bisa menggunakannya.
