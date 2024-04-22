@@ -11,3 +11,6 @@ Amqp adalah singkatan untuk Advanced Message Queuing Protocol. Dimana artinya ap
 Pada link amqp://guest:guest@localhost:567. amqp merupakan protocol yang digunakan untuk melakukan transaksi data.
 
 b. guest:guest merupakan username dan juga password yang digunakan untuk agar terautentikasi oleh server. Untuk 'localhost:5672', localhost merujuk terhadap hostname dari server dimana host nya sekarang adalah perangkat kita sendiri dan untuk 5672 merupakan port yang digunakan untuk AMQP.
+
+![alt text](image-3.png)
+Pada gambar diatas dapat dilihat kalau pada suatu saat sempat terdapat 15 message pada queue. Ini terjadi akibat subscribernya perlu waktu lebih lama untuk mengelola tiap event yang berada di message queue sehingga terjadi penumpukkan message karena lebih cepat publisher meng-publish message daripada subscriber membuat message.
